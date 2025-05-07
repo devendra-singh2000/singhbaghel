@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod-app-1
+  labels:
+    babu: singh
+    env: qa
+spec:
+  containers:
+    - name: mypod-nginx-container-1
+      image: nginx:latest
+      env:
+        - name: babu
+          value: kuta
